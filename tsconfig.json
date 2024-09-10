@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "outDir": "./build/",
+        "baseUrl": "./",
+        "module": "commonjs",
+        "noImplicitAny": false,
+        "noUnusedLocals": true,
+        "resolveJsonModule": true,
+        "target": "es6",
+        "sourceMap": true,
+        "types": ["node"],
+        "plugins": [
+            {
+                "name": "tslint-language-service"
+            }
+        ],
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]
+        }
+    },
+    "include": [
+        "./src/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
