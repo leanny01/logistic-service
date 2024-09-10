@@ -25,7 +25,7 @@ Middleware.initErrorHandler(app);
 /**
  * sets port 8484 to default or unless otherwise specified in the environment
  */
-app.set("port", process.env.PORT || 8484);
+app.set("port", process.env.PORT || 1000);
 
 /**
  * sets secret to 'superSecret', otherwise specified in the environment
