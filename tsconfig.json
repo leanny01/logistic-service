@@ -9,7 +9,8 @@
         "target": "es6",
         "sourceMap": true,
         "types": ["node"],
-        "typeRoots": ["node_modules/@type"],
+        // "typeRoots": ["node_modules/@type"],
+        "typeRoots": [ "./node_modules/@types" ]
 
         "plugins": [
             {
