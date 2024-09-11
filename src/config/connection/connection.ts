@@ -40,6 +40,7 @@ db.on("error", (error: any) => {
 
 db.on("connected", () => {
     Logger.info("[MongoDB] connected");
+    Logger.info(`Node Env ==> ${process.env.NODE_ENV}`);
 });
 
 db.once("open", () => {
