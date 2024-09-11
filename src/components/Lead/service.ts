@@ -105,24 +105,15 @@ const LeadService: ILeadService = {
     try {
       const validate: Joi.ValidationResult<ILeadModel> =
         LeadValidation.createLead(body);
-      console.log("------- validate ------");
-      console.log(validate.error);
 
       if (validate.error) {
         throw new Error(validate.error.message);
       }
 
-      console.log("------- body ------");
-      console.log(body);
-
       const lead: ILeadModel = await LeadModel.create(body);
-      console.log("------- lead ------");
-      console.log(lead);
 
       return lead;
     } catch (error) {
-      console.log("------- error ------");
-      console.log(error);
       throw new Error(error.message);
     }
   },
@@ -136,8 +127,6 @@ const LeadService: ILeadService = {
   async update(id: string, body: ILeadModel): Promise<number> {
     try {
       if (!Types.ObjectId.isValid(id)) {
-        console.log("------- Invalid ------");
-
         throw new Error("Invalid Id");
       }
 
@@ -152,8 +141,6 @@ const LeadService: ILeadService = {
         { _id: new Types.ObjectId(id) },
         { $set: body }
       );
-      console.log("------- lead ------");
-      console.log(lead);
 
       return lead.modifiedCount;
     } catch (error) {
