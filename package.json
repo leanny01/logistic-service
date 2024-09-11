@@ -17,7 +17,8 @@
     "start": "tsc --skipLibCheck && node ./build/index.js",
     "dev": "nodemon",
     "test": "NODE_ENV=test mocha -r ts-node/register test/index.js --exit",
-    "lint": "eslint 'src/**/*.{ts,tsx}' --fix"
+    "lint": "eslint 'src/**/*.{ts,tsx}' --fix",
+    "postinstall": "npm install @types/node --save-dev"
   },
   "files": [
     "src"
@@ -39,8 +40,7 @@
     "mongodb": "^6.8.0",
     "mongoose": "^8.5.4",
     "util": "^0.12.5",
-    "winston": "^3.14.2",
-    "@types/node": "^22.5.4"
+    "winston": "^3.14.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.1",

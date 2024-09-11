@@ -10,7 +10,7 @@
         "sourceMap": true,
         "types": ["node"],
         // "typeRoots": ["node_modules/@type"],
-        "typeRoots": [ "./node_modules/@types" ],
+        // "typeRoots": [ "./node_modules/@types" ],
         "plugins": [
             {
                 "name": "tslint-language-service"
