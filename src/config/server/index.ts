@@ -9,6 +9,7 @@ export interface RequestWithUser extends Request {
     body: any;
     params: any;
     headers: any;
+    files: any;
 }
 const Server: http.Server = http.createServer(server);
 
