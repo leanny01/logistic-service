@@ -17,7 +17,8 @@
     "start": "tsc --skipLibCheck && node ./build/index.js",
     "dev": "nodemon",
     "test": "NODE_ENV=test mocha -r ts-node/register test/index.js --exit",
-    "lint": "eslint 'src/**/*.{ts,tsx}' --fix"
+    "lint": "eslint 'src/**/*.{ts,tsx}' --fix",
+    "postinstall": "yarn"
   },
   "files": [
     "src"
