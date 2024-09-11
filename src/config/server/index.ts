@@ -5,6 +5,10 @@ import { Request } from "express";
 
 export interface RequestWithUser extends Request {
     user: any;
+    query: any;
+    body: any;
+    params: any;
+    headers: any;
 }
 const Server: http.Server = http.createServer(server);
 

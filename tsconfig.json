@@ -8,7 +8,7 @@
     "resolveJsonModule": true,
     "target": "es6",
     "sourceMap": true,
-    "types": ["node"],
+    "types": ["node", "swagger-ui-express", "swagger-jsdoc"],
     "typeRoots": ["./node_modules/@types"],
     "skipLibCheck": true,
 
