@@ -13,7 +13,7 @@
   "description": "A backend service for the abc furniture removal management tool",
   "license": "ISC",
   "scripts": {
-    "build": "npm cache clean --force && npm install @types/node --save-dev && tsc --skipLibCheck",
+    "build": "yarn cache clean --force && yarn add @types/node --dev && tsc --skipLibCheck",
     "start": "tsc --skipLibCheck && node ./build/index.js",
     "dev": "nodemon",
     "test": "NODE_ENV=test mocha -r ts-node/register test/index.js --exit",
